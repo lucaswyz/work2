@@ -1,0 +1,23 @@
+programa
+{
+	inclua biblioteca Texto
+ --> txt
+	funcao inicio()
+	{
+		cadeia letra
+
+		escreva("Digite uma letra: ")
+		leia(letra)
+
+          letra = Texto.caixa_baixa(letra)
+           
+	     se (letra == "a" ou letra == "e" ou letra == "i" ou letra == "o" ou letra == "u"){
+	     	
+	     	escreva("Essa letra é uma vogal")
+	     }
+	    senao{
+	    	     escreva("Essa letra é uma consoante")
+	    }
+	    escreva("\n")
+	}
+}
