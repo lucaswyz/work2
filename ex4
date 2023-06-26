@@ -1,0 +1,22 @@
+programa
+{
+	inclua biblioteca Matematica
+	funcao inicio()
+	{
+		real km
+		real dias, valor, arredondar
+
+		escreva("ALUGUEL DE CARROS\nObs: informamos que caso a quantidade percorrida não seja inteira arredondaremos o valor.")
+		escreva("\n\nQuantos quilômetros foram percorridos com o carro? ")
+		leia(km)
+		escreva("Por quantos dias o carro foi alugado? ")
+		leia(dias)
+
+		arredondar = Matematica.arredondar(km, 0)
+		valor = (60*dias) + (0.15*km)
+
+		escreva("Ao término do período de aluguel, deverá ser pago R$ ", Matematica.arredondar(valor,2), ".")
+		escreva("\n")
+	}
+}
+
