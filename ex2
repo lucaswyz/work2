@@ -1,0 +1,38 @@
+programa
+{
+	inclua biblioteca Matematica --> mat
+	inclua biblioteca Util --> u
+	
+	
+	funcao inicio()
+	{
+		real a, b, c
+		real arredondar1, arredondar2, arredondar3
+		
+
+		escreva("CALCULADORA DE EQUAÇÕES DO 2° GRAU!!!")
+		escreva("\n\nPrimeiramente, informe um valor para a: ")
+		leia(a)
+		escreva("Após, informe um valor para b: ")
+		leia(b)
+		escreva("Por fim, informe um valor para c: ")
+		leia(c)
+		
+		real delta = (b*b)-4*a*c
+		se(delta<0){
+			escreva("\nA equação não pode ser finalizada pois delta não deve ter valor negativo.")
+			escreva("\n")
+		}
+
+		senao{
+		real raiz = Matematica.raiz(delta, 2)
+		real x1 = (-(b) + raiz)/(2*a)
+		real x2 = (-(b) - raiz)/(2*a)
+
+
+		escreva("\nOs valores ficaram:\na = ",a,"\nb = ",b,"\nc = ",c)
+		escreva("\n\nO resultado de Delta é ", Matematica.arredondar(delta, 2))
+		escreva("\n\nE por fim, x1 vale ", Matematica.arredondar(x1,2) , " e x2 vale ", Matematica.arredondar(x2, 2))	
+		}	
+	}
+}
