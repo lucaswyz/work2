@@ -1,0 +1,19 @@
+programa
+{
+	funcao inicio()
+	{
+		real num, num1
+
+		escreva("Informe um valor: ")
+		leia (num)
+		escreva("Informe outro valor: ")
+		leia (num1)
+
+		se(num>num1){
+			escreva(num)
+		}
+		senao{
+			escreva(num1)
+		}
+	}
+}
