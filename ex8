@@ -1,0 +1,35 @@
+programa
+{
+	funcao inicio()
+	{
+	     inteiro sintoma, sin1, sin2, sin3, sin4, sin5
+	     sin1 = 1
+	     sin2 = 2
+	     sin3 = 3
+	     sin4 = 4
+	     sin5 = 5
+	     
+		escreva("TESTE DE COVID")
+
+          escreva("\nInforme qual(is) sintoma(s) da COVID-19 você está sentidos (responda numericamente):")
+          escreva("\nObs: informe 0 quando terminar")
+          escreva("\n1 - Coriza")
+          escreva("\n2 - Tosse")
+          escreva("\n3 - Febre")
+          escreva("\n4 - Dor de Garganta")
+          escreva("\n5 - Dificuldade para respirar")
+          escreva("\n0 - Finalizar")
+          escreva("\n")
+          leia(sintoma)
+
+          se (sintoma>5){
+          	escreva("Opção inválida")
+          }
+		senao se (sintoma<5){
+          	escreva("Este é um sintoma leve, mas ainda há chances de você ter Covid-19.")
+		}
+		senao{
+			escreva("Este é um sintoma grave, você provavelmente está com Covid-19.")
+		}
+	}
+}
