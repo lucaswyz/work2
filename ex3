@@ -1,0 +1,22 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro dias, horas, minutos, segundos
+		escreva("Informe a quantidade de dias, horas, minutos e segundos que você tem de vida: ")
+		escreva("\nDias: ")
+		leia(dias)
+		escreva("Horas: ")
+		leia(horas)
+		escreva("Minutos: ")
+		leia(minutos)
+		escreva("Segundos: ")
+		leia(segundos)
+
+		inteiro dias_total = dias*24*60*60
+		inteiro horas_total = horas*60*60
+		inteiro minutos_total = minutos*60
+
+		escreva("Em total de segundos de vida, você teria ", dias_total + horas_total + minutos_total + segundos, " segundos de vida.") 
+	}
+}
