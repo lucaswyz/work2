@@ -1,0 +1,29 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro lado1, lado2, lado3
+
+		escreva("INVESTIGADOR DE TRIÂNGULOS")
+		escreva("\n\nInforme a medida de um lado: ")
+		leia(lado1)
+		escreva("Informe a medida do outro lado: ")
+		leia(lado2)
+		escreva("Informe a medida do último lado: ")
+		leia(lado3)
+
+		se (lado1+lado2>lado3 e lado1+lado3>lado2 e lado2+lado3>lado1){
+				
+			se(lado1 == lado2 e lado2 == lado3){
+				escreva("\nO triângulo é um equilátero!!!")
+			}	
+			senao se(lado1 == lado2 ou lado1 == lado3 ou lado2 == lado3 ){
+				escreva("\nO triângulo é isóceles!!!")
+			}
+			senao{
+				escreva("\nO triângulo é escaleno!!!")
+			}
+			escreva("\n")
+		}
+	}
+}
