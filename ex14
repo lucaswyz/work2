@@ -1,0 +1,47 @@
+programa
+{
+	inclua biblioteca Texto
+	inclua biblioteca Matematica
+	
+	funcao inicio()
+	{
+		inteiro serie
+		real nota1, nota2, media
+		cadeia nome, sobrenome, curso, materia
+
+		escreva("BOLETIM ANUAL DO IFPR")
+		escreva("\n\nInforme o seu nome: ")
+		leia(nome)
+		escreva("Informe seu sobrenome: ")
+		leia(sobrenome)
+		escreva("Informe sua série: ")
+		leia(serie)
+		escreva("Informe qual curso você realiza: ")
+		leia(curso)
+
+		escreva ("\n", nome, " ", sobrenome, ", de qual matéria você deseja saber sua média anual: ")
+		leia(materia)
+
+		materia = Texto.caixa_alta(materia)
+
+		escreva("\n", materia)
+		escreva("\nInforme a nota do 1° semestre: ")
+		leia(nota1)
+		escreva("Informe a nota do 2° semestre: ")
+		leia(nota2)
+
+		media = (nota1+nota2)/2
+		escreva ("Sua média anual foi ", Matematica.arredondar(media,1))
+
+		se(media>=7){
+			escreva("\nParabéns ", nome, " ", sobrenome, ", você foi aprovado na matéria de ", materia, "!!!")
+		}
+		senao se(media<7){
+			escreva("\n",nome, " ", sobrenome, ", você foi reprovado na matéria de ", materia, ".")
+		}
+		senao se(media==10){
+			escreva("\nParabéns ", nome, " ", sobrenome, ", você foi aprovado com distinção na matéria de ", materia, "!!!")
+		}
+		escreva("\n")
+	}
+}
