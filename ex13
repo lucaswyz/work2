@@ -1,0 +1,18 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro km
+
+		escreva("MEDIDOR DE VELOCIDADE")
+		escreva("\nA que velocidade o carro está? ")
+		leia(km)
+
+		se (km > 80){
+			escreva("Você está acima do limite de velocidade e foi multado no valor de R$", (km-80)*7, ".")
+		}
+		senao{
+			escreva("Você está no limite de velocidade, prossiga!")
+		}
+	}
+}
