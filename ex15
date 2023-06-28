@@ -1,0 +1,110 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro opcao
+		inteiro quantidade
+		real valor
+
+		escreva("*******************************************\n")
+		escreva("*            CANTINA DO LUCAS             *\n")
+		escreva("*******************************************\n")
+		escreva("* 100 - Cachorro quente ------ R$5,00     *\n")
+		escreva("* 101 - Bauru ---------------- R$2,60     *\n")
+		escreva("* 102 - Bauru c/ ovo --------- R$3,80     *\n")
+		escreva("* 103 - Hamburguer------------ R$9,00     *\n")
+		escreva("* 104 - Cheeseburguer -------- R$11,00    *\n")
+		escreva("* 105 - Refrigerante --------- R$3,00     *\n")
+		escreva("* 106 - Semente dos Deuses---- R$1000,00  *\n")
+		escreva("* 0   - SAIR                              *\n")
+		escreva("*******************************************\n")
+
+		escreva("\nVocê deseja algo?")
+		leia(opcao)
+
+		escolha(opcao){
+			caso 100: 
+				escreva("Cachorro quente. Quantos você vai querer? ")
+				leia(quantidade)
+	
+				total = Matematica.arredondar(quantidade * 5.0, 2)
+	
+				escreva("O valor total será: ", total)
+					
+			pare
+				
+			caso 101: 
+				escreva("Bauru. Quantos você vai querer? ")
+				leia(quantidade)
+	
+				total = m.arredondar(quantidade * 5.50, 2)
+	
+				escreva("total: ", total)
+					
+			pare
+
+			caso 102: 
+				escreva("Mini mini pizza (pequena). Quantas unidades? ")
+				leia(quantidade)
+	
+				total = m.arredondar(quantidade * 6.0, 2)
+	
+				escreva("total: ", total)
+					
+			pare
+
+			caso 103: 
+				escreva("Croissant de Tilápia . Quantas unidades? ")
+				leia(quantidade)
+	
+				total = m.arredondar(quantidade * 8.0, 2)
+	
+				escreva("total: ", total)
+					
+			pare
+
+			
+			caso 104: 
+				escreva("Cafezinho sagrado. Quantas unidades? ")
+				leia(quantidade)
+	
+				total = m.arredondar(quantidade * 2.0, 2)
+	
+				escreva("total: ", total)
+					
+			pare
+
+			caso 0: 
+				escreva("Obrigado por escolher nossa cantina...")
+			pare
+
+			
+			caso 105: 
+				escreva("Cafezinho sagrado. Quantas unidades? ")
+				leia(quantidade)
+	
+				total = m.arredondar(quantidade * 2.0, 2)
+	
+				escreva("total: ", total)
+					
+			pare
+
+
+			caso 106: 
+				escreva("Cafezinho sagrado. Quantas unidades? ")
+				leia(quantidade)
+	
+				total = m.arredondar(quantidade * 2.0, 2)
+	
+				escreva("total: ", total)
+					
+			pare
+
+				
+			caso contrario: 
+				escreva("opção inválida.")
+			pare
+			
+		}
+	}
+}
