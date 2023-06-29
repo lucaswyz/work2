@@ -1,0 +1,16 @@
+programa
+{
+	inclua biblioteca Matematica
+-->mat
+	funcao inicio()
+	{
+		escreva("\na. (Verdadeiro) 2 * 4 == 24/3")
+          escreva("\nb. (Falso) (15 % 4) < (19 % 6)")
+          escreva("\nc. (Falso) nao(2 < 5) != (8 == 8)")
+          escreva("\nd. (Verdadeiro) verdadeiro ou falso")
+          escreva("\ne. (Verdadeiro) 2*2 == Matematica.potencia(2, 2)")
+          escreva("\nf. (Falso) verdadeiro e ( (7 / 2) > 3.5 )")
+          escreva("\ng. (Verdadeiro) (Mat.arredondar( 2.8, 0 ) == 3) e (Matematica.raiz(9 , 2) == 3)")
+          escreva("\n")
+	}
+}
