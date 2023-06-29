@@ -1,0 +1,31 @@
+programa 
+{
+     inclua biblioteca Matematica --> mat
+     funcao inicio()
+    {
+    real comp, larg, area
+    real tinta, latas
+    real latas_arredondar, arredondar1, preco
+    
+    escreva ("Para cada 3 metros será utilizado 1 litro de tinta")
+
+    escreva("\nInforme o comprimento da parede: ")
+    leia (comp)
+    escreva("Informe a largura da parede: ")
+    leia (larg)
+
+    area = ((comp*larg))
+     tinta = (area/3)
+      latas =  (tinta/18)
+        latas_arredondar = mat.arredondar(latas = latas+1, 0)
+          arredondar1 = mat.arredondar(tinta, 1)
+           preco = (latas_arredondar*480)
+
+    escreva ("\nA parede mede ", area, "m².")
+    escreva ("\nCom medida de ", area, "m², serão utilizados ", arredondar1, " litros de tinta.")
+
+    escreva ("\nA quantidade de latas de tinta que você irá precisar é(são) de ", latas_arredondar, " lata(s).")
+    escreva ("O preço total a ser pago é de R$", Matematica.arredondar(preco,2), ".")
+    escreva("\n")
+  }
+}
