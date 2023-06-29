@@ -1,10 +1,11 @@
 programa
 {
+	inclua biblioteca Matematica
 	funcao inicio()
 	{
 		inteiro opcao
 		inteiro quantidade
-		real valor
+		real total
 
 		escreva("*******************************************\n")
 		escreva("*            CANTINA DO LUCAS             *\n")
@@ -19,7 +20,7 @@ programa
 		escreva("* 0   - SAIR                              *\n")
 		escreva("*******************************************\n")
 
-		escreva("\nVocê deseja algo?")
+		escreva("\nVocê deseja algo? ")
 		leia(opcao)
 
 		escolha(opcao){
@@ -29,7 +30,7 @@ programa
 	
 				total = Matematica.arredondar(quantidade * 5.0, 2)
 	
-				escreva("O valor total será: ", total)
+				escreva("O valor total será: R$", total)
 					
 			pare
 				
@@ -37,66 +38,61 @@ programa
 				escreva("Bauru. Quantos você vai querer? ")
 				leia(quantidade)
 	
-				total = m.arredondar(quantidade * 5.50, 2)
+				total = Matematica.arredondar(quantidade * 2.60, 2)
 	
-				escreva("total: ", total)
+				escreva("O valor total será: R$", total)
 					
 			pare
 
 			caso 102: 
-				escreva("Mini mini pizza (pequena). Quantas unidades? ")
+				escreva("Bauru c/ ovo. Quantos você vai querer? ")
 				leia(quantidade)
 	
-				total = m.arredondar(quantidade * 6.0, 2)
+				total = Matematica.arredondar(quantidade * 3.80, 2)
 	
-				escreva("total: ", total)
+				escreva("O valor total será: R$", total)
 					
 			pare
 
 			caso 103: 
-				escreva("Croissant de Tilápia . Quantas unidades? ")
+				escreva("Hamburguer. Quantos você vai querer? ")
 				leia(quantidade)
 	
-				total = m.arredondar(quantidade * 8.0, 2)
+				total = Matematica.arredondar(quantidade * 9.0, 2)
 	
-				escreva("total: ", total)
+				escreva("O valor total será: R$", total)
 					
 			pare
 
 			
 			caso 104: 
-				escreva("Cafezinho sagrado. Quantas unidades? ")
+				escreva("Cheeseburguer. Quantos você vai querer? ")
 				leia(quantidade)
 	
-				total = m.arredondar(quantidade * 2.0, 2)
+				total = Matematica.arredondar(quantidade * 11.0, 2)
 	
-				escreva("total: ", total)
+				escreva("O valor total será: R$", total)
 					
 			pare
-
-			caso 0: 
-				escreva("Obrigado por escolher nossa cantina...")
-			pare
-
 			
 			caso 105: 
-				escreva("Cafezinho sagrado. Quantas unidades? ")
+				escreva("Refrigerantes. Quantos você vai querer? ")
 				leia(quantidade)
 	
-				total = m.arredondar(quantidade * 2.0, 2)
+				total = Matematica.arredondar(quantidade * 3.0, 2)
 	
-				escreva("total: ", total)
+				escreva("O valor total será: R$", total)
 					
 			pare
 
 
 			caso 106: 
-				escreva("Cafezinho sagrado. Quantas unidades? ")
+				escreva("Semente dos Deuses. Quantos você vai querer? ")
 				leia(quantidade)
 	
-				total = m.arredondar(quantidade * 2.0, 2)
+				total = Matematica.arredondar(quantidade * 1000.0, 2)
 	
-				escreva("total: ", total)
+				escreva("O valor total será: R$", total)
 					
 			pare
 
